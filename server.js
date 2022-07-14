@@ -18,6 +18,9 @@ io.on('connection', function(socket) {
     });    
 });
 
+app.get('/ruta1', function(req, res) {
+    res.send('Hola Mundo')
+})
 
 const PORT = process.env.PORT || 8080;
 
